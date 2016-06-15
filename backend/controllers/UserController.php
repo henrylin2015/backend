@@ -8,6 +8,7 @@ use backend\models\UserSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use backend\models\Admin_signup;
 
 /**
  * UserController implements the CRUD actions for User model.
@@ -63,15 +64,16 @@ class UserController extends Controller
      */
     public function actionCreate()
     {
-        $model = new User();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
+        $model = new Admin_signup();
+        $model->isNewRecord = true;
+        if ($model->load(Yii::$app->request->post())) {
+            if($model->signup()){
+                return $this->redirect(['index']);
+            }
         }
+        return $this->render('create', [
+            'model' => $model,
+        ]);
     }
 
     /**
@@ -83,14 +85,18 @@ class UserController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
+        $admin = new Admin_signup();
+        $admin->username = $model->username;
+        $admin->email = $model->email;
+        $admin->password = $model->password_hash;
+        if ($admin->load(Yii::$app->request->post())) {
+            if($admin->adminUpdate($id)){
+                return $this->redirect(['view', 'id' => $admin->id]);
+            }
         }
+        return $this->render('update', [
+            'model' => $admin,
+        ]);
     }
 
     /**

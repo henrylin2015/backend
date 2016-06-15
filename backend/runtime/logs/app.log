@@ -3093,3 +3093,2819 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1465962767.011
     'REQUEST_TIME' => 1465962767
 ]
+2016-06-15 12:41:59 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception 'ReflectionException' with message 'Class require does not exist' 
+
+in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php:417
+
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(417): ReflectionClass->__construct('require')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(360): yii\di\Container->getDependencies('require')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('require', Array, Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('require', Array, Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/validators/Validator.php(209): yii\BaseYii::createObject(Array)
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Model.php(445): yii\validators\Validator::createValidator('require', Object(common\models\User), Array, Array)
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Model.php(409): yii\base\Model->createValidators()
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Model.php(185): yii\base\Model->getValidators()
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Model.php(772): yii\base\Model->scenarios()
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(700): yii\base\Model->activeAttributes()
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(216): yii\widgets\ActiveField->getClientOptions()
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(206): yii\widgets\ActiveField->begin()
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(162): yii\widgets\ActiveField->render()
+#13 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(15): yii\widgets\ActiveField->__toString()
+#14 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#15 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#17 /Users/xiaolin/Sites/tmp/backend/backend/views/user/create.php(19): yii\base\View->render('_form', Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#20 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#21 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('create', Array, Object(backend\controllers\UserController))
+#22 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(73): yii\base\Controller->render('create', Array)
+#23 [internal function]: backend\controllers\UserController->actionCreate()
+#24 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#25 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#26 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#27 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/create', Array)
+#28 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#30 {main}' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(164): yii\base\ErrorHandler::convertExceptionToError(Object(ReflectionException))
+#3 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(15): yii\widgets\ActiveField->__toString()
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', '<span class="ke...')
+#7 /Users/xiaolin/Sites/tmp/backend/backend/views/user/create.php(19): yii\base\View->render('<span class="st...', '[<span class="s...')
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(backend\controllers\UserController))
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(backend\controllers\UserController))
+#12 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(73): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#13 [internal function]: backend\controllers\UserController->actionCreate()
+#14 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#15 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+    in /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php:15
+    in /Users/xiaolin/Sites/tmp/backend/backend/views/user/create.php:19
+    in /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php:73
+2016-06-15 12:41:59 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '53820'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465965719.492
+    'REQUEST_TIME' => 1465965719
+]
+2016-06-15 12:46:33 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\User::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:141
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\db\BaseActiveRecord->__get('password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\User), 'password')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(common\models\User), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\User), 'password', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#9 /Users/xiaolin/Sites/tmp/backend/backend/views/user/create.php(19): yii\base\View->render('_form', Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('create', Array, Object(backend\controllers\UserController))
+#14 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(73): yii\base\Controller->render('create', Array)
+#15 [internal function]: backend\controllers\UserController->actionCreate()
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/create', Array)
+#20 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2016-06-15 12:46:32 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '53898'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465965992.892
+    'REQUEST_TIME' => 1465965992
+]
+2016-06-15 12:48:20 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'auth_key' doesn't have a default value' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php:844
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php(844): PDOStatement->execute()
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php(451): yii\db\Command->execute()
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\UserController->actionCreate()
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1364 Field 'auth_key' doesn't have a default value
+The SQL being executed was: INSERT INTO `user` (`username`, `email`, `status`, `created_at`, `updated_at`) VALUES ('henry', 'henry@admin.com', 10, 1465966100, 1465966100)' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php:633
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php(451): yii\db\Command->execute()
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\UserController->actionCreate()
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'auth_key' doesn't have a default value
+)
+
+2016-06-15 12:48:20 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'VHlNa0h2c28sQDQYATMnHmIIIFp9OT8cbUxgD341NgodDnw6BxdAAw=='
+    'User' => [
+        'username' => 'henry'
+        'email' => 'henry@admin.com'
+        'password_hash' => '111111'
+        'status' => '10'
+    ]
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '176'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '53940'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465966100.687
+    'REQUEST_TIME' => 1465966100
+]
+2016-06-15 12:49:14 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'password_hash' doesn't have a default value' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php:844
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php(844): PDOStatement->execute()
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php(451): yii\db\Command->execute()
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\UserController->actionCreate()
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1364 Field 'password_hash' doesn't have a default value
+The SQL being executed was: INSERT INTO `user` (`username`, `email`, `status`, `created_at`, `updated_at`) VALUES ('henry', 'henry@admin.com', 10, 1465966154, 1465966154)' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php:633
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php(451): yii\db\Command->execute()
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\UserController->actionCreate()
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'password_hash' doesn't have a default value
+)
+
+2016-06-15 12:49:14 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'VHlNa0h2c28sQDQYATMnHmIIIFp9OT8cbUxgD341NgodDnw6BxdAAw=='
+    'User' => [
+        'username' => 'henry'
+        'email' => 'henry@admin.com'
+        'password_hash' => '111111'
+        'status' => '10'
+    ]
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '176'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '53952'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465966154.853
+    'REQUEST_TIME' => 1465966154
+]
+2016-06-15 12:50:17 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'password_hash' doesn't have a default value' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php:844
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php(844): PDOStatement->execute()
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php(451): yii\db\Command->execute()
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\UserController->actionCreate()
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1364 Field 'password_hash' doesn't have a default value
+The SQL being executed was: INSERT INTO `user` (`username`, `email`, `status`, `created_at`, `updated_at`) VALUES ('henry', 'henry@admin.com', 10, 1465966217, 1465966217)' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php:633
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php(451): yii\db\Command->execute()
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\UserController->actionCreate()
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'password_hash' doesn't have a default value
+)
+
+2016-06-15 12:50:17 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'VHlNa0h2c28sQDQYATMnHmIIIFp9OT8cbUxgD341NgodDnw6BxdAAw=='
+    'User' => [
+        'username' => 'henry'
+        'email' => 'henry@admin.com'
+        'password_hash' => '111111'
+        'status' => '10'
+    ]
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '176'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '53958'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465966217.669
+    'REQUEST_TIME' => 1465966217
+]
+2016-06-15 12:50:41 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'password_hash' doesn't have a default value' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php:844
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php(844): PDOStatement->execute()
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php(451): yii\db\Command->execute()
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\UserController->actionCreate()
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1364 Field 'password_hash' doesn't have a default value
+The SQL being executed was: INSERT INTO `user` (`username`, `email`, `status`, `created_at`, `updated_at`) VALUES ('henry', 'henry@admin.com', 10, 1465966241, 1465966241)' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php:633
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php(451): yii\db\Command->execute()
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\UserController->actionCreate()
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'password_hash' doesn't have a default value
+)
+
+2016-06-15 12:50:41 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'RGZhSWExVGs8Xxg6KHQAGnIXDHhUfhgYfVNMLVdyEQ4NEVAYLlBnBw=='
+    'User' => [
+        'username' => 'henry'
+        'email' => 'henry@admin.com'
+        'password' => '111111'
+        'status' => '10'
+    ]
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '171'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '53985'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465966241.243
+    'REQUEST_TIME' => 1465966241
+]
+2016-06-15 12:59:49 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'username' doesn't have a default value' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php:844
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php(844): PDOStatement->execute()
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php(451): yii\db\Command->execute()
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\UserController->actionCreate()
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1364 Field 'username' doesn't have a default value
+The SQL being executed was: INSERT INTO `user` (`status`, `created_at`, `updated_at`) VALUES (10, 1465966789, 1465966789)' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php:633
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/Schema.php(451): yii\db\Command->execute()
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(457): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(598): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\UserController->actionCreate()
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'username' doesn't have a default value
+)
+
+2016-06-15 12:59:49 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'RGZhSWExVGs8Xxg6KHQAGnIXDHhUfhgYfVNMLVdyEQ4NEVAYLlBnBw=='
+    'User' => [
+        'username' => 'henry'
+        'email' => 'henry@admin.com'
+        'password' => '111111'
+        'status' => '10'
+    ]
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '171'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54057'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465966789.149
+    'REQUEST_TIME' => 1465966789
+]
+2016-06-15 13:13:54 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Admin_signup::status' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\base\Component->__get('status')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\Admin_signup), 'status')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1292): yii\helpers\BaseHtml::activeInput('text', Object(backend\models\Admin_signup), 'status', Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(362): yii\helpers\BaseHtml::activeTextInput(Object(backend\models\Admin_signup), 'status', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(21): yii\widgets\ActiveField->textInput()
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#8 /Users/xiaolin/Sites/tmp/backend/backend/views/user/create.php(19): yii\base\View->render('_form', Array)
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('create', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(76): yii\base\Controller->render('create', Array)
+#14 [internal function]: backend\controllers\UserController->actionCreate()
+#15 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/create', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#21 {main}
+2016-06-15 13:13:54 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54178'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465967634.121
+    'REQUEST_TIME' => 1465967634
+]
+2016-06-15 13:14:01 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Admin_signup::status' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\base\Component->__get('status')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\Admin_signup), 'status')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1292): yii\helpers\BaseHtml::activeInput('text', Object(backend\models\Admin_signup), 'status', Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(362): yii\helpers\BaseHtml::activeTextInput(Object(backend\models\Admin_signup), 'status', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(21): yii\widgets\ActiveField->textInput()
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#8 /Users/xiaolin/Sites/tmp/backend/backend/views/user/create.php(19): yii\base\View->render('_form', Array)
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('create', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(76): yii\base\Controller->render('create', Array)
+#14 [internal function]: backend\controllers\UserController->actionCreate()
+#15 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/create', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#21 {main}
+2016-06-15 13:14:01 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54180'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465967641.464
+    'REQUEST_TIME' => 1465967641
+]
+2016-06-15 13:14:27 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Admin_signup::isNewRecord' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(22): yii\base\Component->__get('isNewRecord')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#4 /Users/xiaolin/Sites/tmp/backend/backend/views/user/create.php(19): yii\base\View->render('_form', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('create', Array, Object(backend\controllers\UserController))
+#9 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(76): yii\base\Controller->render('create', Array)
+#10 [internal function]: backend\controllers\UserController->actionCreate()
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#14 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/create', Array)
+#15 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2016-06-15 13:14:27 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54194'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465967667.088
+    'REQUEST_TIME' => 1465967667
+]
+2016-06-15 13:18:18 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Admin_signup::passowrd' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/validators/Validator.php(266): yii\base\Component->__get('passowrd')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/validators/Validator.php(252): yii\validators\Validator->validateAttribute(Object(backend\models\Admin_signup), 'passowrd')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Model.php(356): yii\validators\Validator->validateAttributes(Object(backend\models\Admin_signup), Array)
+#3 /Users/xiaolin/Sites/tmp/backend/backend/models/Admin_signup.php(25): yii\base\Model->validate()
+#4 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(70): backend\models\Admin_signup->signup()
+#5 [internal function]: backend\controllers\UserController->actionCreate()
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/create', Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2016-06-15 13:18:18 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'b3JMNXJ5SEsXSzVGOzwcOlkDIQRHNgQ4VkdhUUQ6DS4mBX1kPRh7Jw=='
+    'Admin_signup' => [
+        'username' => 'henry'
+        'email' => 'henry@admin.com'
+        'password' => '111111'
+    ]
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '175'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54242'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465967898.744
+    'REQUEST_TIME' => 1465967898
+]
+2016-06-15 13:19:09 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Admin_signup::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\Admin_signup), 'password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(backend\models\Admin_signup), 'password', Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(backend\models\Admin_signup), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#8 /Users/xiaolin/Sites/tmp/backend/backend/views/user/create.php(19): yii\base\View->render('_form', Array)
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('create', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(76): yii\base\Controller->render('create', Array)
+#14 [internal function]: backend\controllers\UserController->actionCreate()
+#15 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/create', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#21 {main}
+2016-06-15 13:19:09 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'b3JMNXJ5SEsXSzVGOzwcOlkDIQRHNgQ4VkdhUUQ6DS4mBX1kPRh7Jw=='
+    'Admin_signup' => [
+        'username' => 'henry'
+        'email' => 'henry@admin.com'
+        'password' => '111111'
+    ]
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '175'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54252'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465967949.327
+    'REQUEST_TIME' => 1465967949
+]
+2016-06-15 13:19:11 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Admin_signup::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\Admin_signup), 'password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(backend\models\Admin_signup), 'password', Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(backend\models\Admin_signup), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#8 /Users/xiaolin/Sites/tmp/backend/backend/views/user/create.php(19): yii\base\View->render('_form', Array)
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('create', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(76): yii\base\Controller->render('create', Array)
+#14 [internal function]: backend\controllers\UserController->actionCreate()
+#15 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/create', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#21 {main}
+2016-06-15 13:19:11 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54255'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465967951.216
+    'REQUEST_TIME' => 1465967951
+]
+2016-06-15 13:19:17 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Admin_signup::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\Admin_signup), 'password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(backend\models\Admin_signup), 'password', Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(backend\models\Admin_signup), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#8 /Users/xiaolin/Sites/tmp/backend/backend/views/user/create.php(19): yii\base\View->render('_form', Array)
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('create', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(76): yii\base\Controller->render('create', Array)
+#14 [internal function]: backend\controllers\UserController->actionCreate()
+#15 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/create', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#21 {main}
+2016-06-15 13:19:17 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54263'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465967957.175
+    'REQUEST_TIME' => 1465967957
+]
+2016-06-15 13:19:20 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Admin_signup::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\Admin_signup), 'password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(backend\models\Admin_signup), 'password', Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(backend\models\Admin_signup), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#8 /Users/xiaolin/Sites/tmp/backend/backend/views/user/create.php(19): yii\base\View->render('_form', Array)
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('create', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(76): yii\base\Controller->render('create', Array)
+#14 [internal function]: backend\controllers\UserController->actionCreate()
+#15 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/create', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#21 {main}
+2016-06-15 13:19:20 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54256'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465967960.743
+    'REQUEST_TIME' => 1465967960
+]
+2016-06-15 13:20:17 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Admin_signup::passowrd' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/validators/Validator.php(266): yii\base\Component->__get('passowrd')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/validators/Validator.php(252): yii\validators\Validator->validateAttribute(Object(backend\models\Admin_signup), 'passowrd')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Model.php(356): yii\validators\Validator->validateAttributes(Object(backend\models\Admin_signup), Array)
+#3 /Users/xiaolin/Sites/tmp/backend/backend/models/Admin_signup.php(25): yii\base\Model->validate()
+#4 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(70): backend\models\Admin_signup->signup()
+#5 [internal function]: backend\controllers\UserController->actionCreate()
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#9 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/create', Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2016-06-15 13:20:17 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'TUhRYlR0S1c1cSgRHTEfJns5PFNhOwckdH18BmI3DjIEP2AzGxV4Ow=='
+    'Admin_signup' => [
+        'username' => 'henry'
+        'email' => 'henry@admin.com'
+        'password' => '111111'
+    ]
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '175'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54295'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465968017.164
+    'REQUEST_TIME' => 1465968017
+]
+2016-06-15 13:21:25 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Admin_signup::id' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(71): yii\base\Component->__get('id')
+#1 [internal function]: backend\controllers\UserController->actionCreate()
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('create', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/create', Array)
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-15 13:21:25 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'TUhRYlR0S1c1cSgRHTEfJns5PFNhOwckdH18BmI3DjIEP2AzGxV4Ow=='
+    'Admin_signup' => [
+        'username' => 'henry'
+        'email' => 'henry@admin.com'
+        'password' => '111111'
+    ]
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '175'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54312'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465968085.063
+    'REQUEST_TIME' => 1465968085
+]
+2016-06-15 13:28:13 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\models\Yii' not found' in /Users/xiaolin/Sites/tmp/backend/backend/models/Admin_signup.php:34
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-15 13:28:12 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/create'
+]
+
+$_POST = [
+    '_csrf' => 'TUhRYlR0S1c1cSgRHTEfJns5PFNhOwckdH18BmI3DjIEP2AzGxV4Ow=='
+    'Admin_signup' => [
+        'username' => 'henry'
+        'email' => 'henry@admin.com'
+        'password' => '111111'
+    ]
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '175'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54377'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fcreate'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fcreate'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465968492.16
+    'REQUEST_TIME' => 1465968492
+]
+2016-06-15 13:32:45 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\User::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:141
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\db\BaseActiveRecord->__get('password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\User), 'password')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(common\models\User), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\User), 'password', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#9 /Users/xiaolin/Sites/tmp/backend/backend/views/user/update.php(19): yii\base\View->render('_form', Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('update', Array, Object(backend\controllers\UserController))
+#14 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\UserController->actionUpdate('6')
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/update', Array)
+#20 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2016-06-15 13:32:45 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fview&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54471'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=6'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465968765.648
+    'REQUEST_TIME' => 1465968765
+]
+2016-06-15 13:32:45 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\User::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:141
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\db\BaseActiveRecord->__get('password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\User), 'password')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(common\models\User), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\User), 'password', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#9 /Users/xiaolin/Sites/tmp/backend/backend/views/user/update.php(19): yii\base\View->render('_form', Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('update', Array, Object(backend\controllers\UserController))
+#14 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\UserController->actionUpdate('6')
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/update', Array)
+#20 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2016-06-15 13:32:45 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fview&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54473'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=6'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465968765.708
+    'REQUEST_TIME' => 1465968765
+]
+2016-06-15 13:33:04 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\User::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:141
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\db\BaseActiveRecord->__get('password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\User), 'password')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(common\models\User), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\User), 'password', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#9 /Users/xiaolin/Sites/tmp/backend/backend/views/user/update.php(19): yii\base\View->render('_form', Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('update', Array, Object(backend\controllers\UserController))
+#14 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\UserController->actionUpdate('6')
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/update', Array)
+#20 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2016-06-15 13:33:04 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fview&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54483'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=6'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465968784.443
+    'REQUEST_TIME' => 1465968784
+]
+2016-06-15 13:35:22 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\User::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:141
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\db\BaseActiveRecord->__get('password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\User), 'password')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(common\models\User), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\User), 'password', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#9 /Users/xiaolin/Sites/tmp/backend/backend/views/user/update.php(19): yii\base\View->render('_form', Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('update', Array, Object(backend\controllers\UserController))
+#14 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\UserController->actionUpdate('6')
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/update', Array)
+#20 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2016-06-15 13:35:22 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fview&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54689'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=6'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465968922.136
+    'REQUEST_TIME' => 1465968922
+]
+2016-06-15 13:35:26 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\DataColumn::0' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Object->__set('0', 'created_at')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\grid\DataColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\grid\\DataCo...', Array, Array)
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\grid\\DataCo...', Array, Array)
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/grid/GridView.php(531): yii\BaseYii::createObject(Array)
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/grid/GridView.php(275): yii\grid\GridView->initColumns()
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Object.php(107): yii\grid\GridView->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Widget.php(97): yii\BaseYii::createObject(Array)
+#14 /Users/xiaolin/Sites/tmp/backend/backend/views/user/index.php(40): yii\base\Widget::widget(Array)
+#15 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#19 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(45): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\UserController->actionIndex()
+#21 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#22 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#23 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#24 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/index', Array)
+#25 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#27 {main}
+2016-06-15 13:35:26 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/index'
+    'sort' => '-id'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Findex&sort=id'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54700'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex&sort=-id'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Findex&sort=-id'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465968926.88
+    'REQUEST_TIME' => 1465968926
+]
+2016-06-15 13:35:26 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\DataColumn::0' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Object->__set('0', 'created_at')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\grid\DataColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\grid\\DataCo...', Array, Array)
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\grid\\DataCo...', Array, Array)
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/grid/GridView.php(531): yii\BaseYii::createObject(Array)
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/grid/GridView.php(275): yii\grid\GridView->initColumns()
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Object.php(107): yii\grid\GridView->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Widget.php(97): yii\BaseYii::createObject(Array)
+#14 /Users/xiaolin/Sites/tmp/backend/backend/views/user/index.php(40): yii\base\Widget::widget(Array)
+#15 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#19 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(45): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\UserController->actionIndex()
+#21 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#22 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#23 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#24 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/index', Array)
+#25 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#27 {main}
+2016-06-15 13:35:26 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/index'
+    'sort' => 'id'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54691'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex&sort=id'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Findex&sort=id'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465968926.923
+    'REQUEST_TIME' => 1465968926
+]
+2016-06-15 13:35:31 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\DataColumn::0' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/BaseYii.php(521): yii\base\Object->__set('0', 'created_at')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\grid\DataColumn), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\grid\\DataCo...', Array, Array)
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\grid\\DataCo...', Array, Array)
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/grid/GridView.php(531): yii\BaseYii::createObject(Array)
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/grid/GridView.php(275): yii\grid\GridView->initColumns()
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Object.php(107): yii\grid\GridView->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(374): ReflectionClass->newInstanceArgs(Array)
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/di/Container.php(153): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Widget.php(97): yii\BaseYii::createObject(Array)
+#14 /Users/xiaolin/Sites/tmp/backend/backend/views/user/index.php(40): yii\base\Widget::widget(Array)
+#15 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#19 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(45): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\UserController->actionIndex()
+#21 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#22 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#23 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('index', Array)
+#24 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/index', Array)
+#25 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#27 {main}
+2016-06-15 13:35:31 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/index'
+    'sort' => 'id'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '54696'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex&sort=id'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Findex&sort=id'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465968931.568
+    'REQUEST_TIME' => 1465968931
+]
+2016-06-15 13:58:32 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\User::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:141
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\db\BaseActiveRecord->__get('password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\User), 'password')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(common\models\User), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\User), 'password', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#9 /Users/xiaolin/Sites/tmp/backend/backend/views/user/update.php(19): yii\base\View->render('_form', Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('update', Array, Object(backend\controllers\UserController))
+#14 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\UserController->actionUpdate('1')
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/update', Array)
+#20 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2016-06-15 13:58:32 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55047'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=1'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465970312.64
+    'REQUEST_TIME' => 1465970312
+]
+2016-06-15 14:00:37 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\User::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:141
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\db\BaseActiveRecord->__get('password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\User), 'password')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(common\models\User), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\User), 'password', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#9 /Users/xiaolin/Sites/tmp/backend/backend/views/user/update.php(19): yii\base\View->render('_form', Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('update', Array, Object(backend\controllers\UserController))
+#14 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\UserController->actionUpdate('1')
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/update', Array)
+#20 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2016-06-15 14:00:37 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55080'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=1'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465970437.053
+    'REQUEST_TIME' => 1465970437
+]
+2016-06-15 14:00:37 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\User::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:141
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\db\BaseActiveRecord->__get('password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\User), 'password')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(common\models\User), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\User), 'password', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#9 /Users/xiaolin/Sites/tmp/backend/backend/views/user/update.php(19): yii\base\View->render('_form', Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('update', Array, Object(backend\controllers\UserController))
+#14 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(94): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\UserController->actionUpdate('1')
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/update', Array)
+#20 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2016-06-15 14:00:37 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55085'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=1'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465970437.085
+    'REQUEST_TIME' => 1465970437
+]
+2016-06-15 14:02:50 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function backend\controllers\Admin_signup()' in /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php:88
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-15 14:02:50 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55104'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=1'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465970570.32
+    'REQUEST_TIME' => 1465970570
+]
+2016-06-15 14:07:34 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: backend\controllers\UserController::findOne()' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:285
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(88): yii\base\Component->__call('findOne', Array)
+#1 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(88): backend\controllers\UserController->findOne('6')
+#2 [internal function]: backend\controllers\UserController->actionUpdate('6')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/update', Array)
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-06-15 14:07:34 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55184'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=6'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465970854.245
+    'REQUEST_TIME' => 1465970854
+]
+2016-06-15 14:08:32 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\User::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:141
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\db\BaseActiveRecord->__get('password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\User), 'password')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(common\models\User), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\User), 'password', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#9 /Users/xiaolin/Sites/tmp/backend/backend/views/user/update.php(19): yii\base\View->render('_form', Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('update', Array, Object(backend\controllers\UserController))
+#14 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(96): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\UserController->actionUpdate('6')
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/update', Array)
+#20 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2016-06-15 14:08:32 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55198'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=6'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465970912.553
+    'REQUEST_TIME' => 1465970912
+]
+2016-06-15 14:08:43 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php:90
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(90): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/xiaolin/...', 90, Array)
+#1 [internal function]: backend\controllers\UserController->actionUpdate('6')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/update', Array)
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-15 14:08:43 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55202'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=6'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465970923.954
+    'REQUEST_TIME' => 1465970923
+]
+2016-06-15 14:09:38 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php:89
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(89): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/xiaolin/...', 89, Array)
+#1 [internal function]: backend\controllers\UserController->actionUpdate('6')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/update', Array)
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-06-15 14:09:37 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55215'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=6'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465970977.962
+    'REQUEST_TIME' => 1465970977
+]
+2016-06-15 14:10:00 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Getting write-only property: common\models\User::password' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Component.php:141
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('password')
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(2068): yii\db\BaseActiveRecord->__get('password')
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1243): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\User), 'password')
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/helpers/BaseHtml.php(1333): yii\helpers\BaseHtml::activeInput('password', Object(common\models\User), 'password', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/widgets/ActiveField.php(407): yii\helpers\BaseHtml::activePasswordInput(Object(common\models\User), 'password', Array)
+#5 /Users/xiaolin/Sites/tmp/backend/backend/views/user/_form.php(19): yii\widgets\ActiveField->passwordInput()
+#6 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#7 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#8 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, NULL)
+#9 /Users/xiaolin/Sites/tmp/backend/backend/views/user/update.php(19): yii\base\View->render('_form', Array)
+#10 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(325): require('/Users/xiaolin/...')
+#11 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/xiaolin/...', Array)
+#12 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/xiaolin/...', Array, Object(backend\controllers\UserController))
+#13 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('update', Array, Object(backend\controllers\UserController))
+#14 /Users/xiaolin/Sites/tmp/backend/backend/controllers/UserController.php(97): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\UserController->actionUpdate('6')
+#16 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#19 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/update', Array)
+#20 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+2016-06-15 14:10:00 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '6'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55224'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=6'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=6'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465971000.252
+    'REQUEST_TIME' => 1465971000
+]
+2016-06-15 14:21:56 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#2 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('view', Array)
+#3 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('user/view', Array)
+#4 /Users/xiaolin/Sites/tmp/backend/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /Users/xiaolin/Sites/tmp/backend/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2016-06-15 14:21:56 [127.0.0.1][1][dtvla6gguh5jlicd1c4ln7pev1][info][application] $_GET = [
+    'r' => 'user/view'
+]
+
+$_COOKIE = [
+    'csrftoken' => 'agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG'
+    '_pk_id_1_dc78' => '51a130e715193fdb.1460686668.2.1460941462.1460941462.'
+    'PHPSESSID' => 'dtvla6gguh5jlicd1c4ln7pev1'
+    '_csrf' => 'd525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"x9ysIETq6qm15OLs95-d6CEeIw1QOa3l\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/tmp/backend/backend/web/index.php?r=site%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://127.0.0.1/tmp/backend/backend/web/index.php?r=user%2Fupdate&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'csrftoken=agXGVLvHbFfRLCKvU6yDB8JEkkDcR2DG; _pk_id.1.dc78=51a130e715193fdb.1460686668.2.1460941462.1460941462.; PHPSESSID=dtvla6gguh5jlicd1c4ln7pev1; _csrf=d525904336100c269dcd4d9f1908734b8795bccbddea8619a0c8389ce53df0dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22x9ysIETq6qm15OLs95-d6CEeIw1QOa3l%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) PHP/5.5.31'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/xiaolin/Sites'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/xiaolin/Sites/tmp/backend/backend/web/index.php'
+    'REMOTE_PORT' => '55513'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fview'
+    'REQUEST_URI' => '/tmp/backend/backend/web/index.php?r=user%2Fview'
+    'SCRIPT_NAME' => '/tmp/backend/backend/web/index.php'
+    'PHP_SELF' => '/tmp/backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1465971716.268
+    'REQUEST_TIME' => 1465971716
+]

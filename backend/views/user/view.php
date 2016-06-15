@@ -1,5 +1,6 @@
 <?php
 
+use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 
@@ -23,6 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
+      <a href="<?=Url::to(['/user/index'])?>" class="btn btn-primary">List</a>
     </p>
 
     <?= DetailView::widget([

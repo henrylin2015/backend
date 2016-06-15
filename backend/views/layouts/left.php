@@ -75,7 +75,7 @@ use mdm\admin\components\MenuHelper;
           <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu <?php if(Yii::$app->controller->id == 'user' || Yii::$app->controller->id == 'role' || Yii::$app->controller->id == 'route' || Yii::$app->controller->id == 'permission' || Yii::$app->controller->id == 'assignment' || Yii::$app->controller->id == 'menu'){ echo "menu-open";}  ?>">
-          <li><a href="<?=Url::to(['/admin/user'])?>"><i class="fa fa-circle-o"></i>后台用户</a></li>
+          <li><a href="<?=Url::to(['/user'])?>"><i class="fa fa-circle-o"></i>后台用户</a></li>
           <li class="treeview <?php if(Yii::$app->controller->id == 'role' || Yii::$app->controller->id == 'route' || Yii::$app->controller->id == 'permission' || Yii::$app->controller->id == 'assignment' || Yii::$app->controller->id == 'menu'){ echo "active";}  ?>">
             <a href="<?=Url::to(['/admin/role'])?>">
               <i class="fa fa-circle-o"></i>权限<i class="fa fa-angle-left pull-right"></i>
